@@ -1,9 +1,22 @@
 import { BiSearch } from 'react-icons/bi';
 import { TbCurrentLocation } from 'react-icons/tb';
+import { useGeolocated } from 'react-geolocated';
 
 type Props = {};
 const Searchbar = (props: Props) => {
   const handleMyLocation = () => {};
+  const { coords, isGeolocationAvailable, isGeolocationEnabled } =
+    useGeolocated({
+      positionOptions: {
+        enableHighAccuracy: false,
+      },
+      userDecisionTimeout: 5000,
+    });
+
+  if (coords) {
+    console.log('latitude', coords.latitude);
+    console.log('longitude', coords.longitude);
+  }
 
   return (
     <article className='max-w-5/6 mx-auto flex w-96 items-center justify-between gap-1'>
