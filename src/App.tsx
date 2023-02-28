@@ -1,7 +1,10 @@
+import { ForecastDashboard, TodayDashboard } from '@/components';
+
 const App = () => {
   return (
-    <div>
-      <h1 className='uppercase'>Hello World!</h1>
+    <div className='flex h-screen w-full justify-between bg-white'>
+      <TodayDashboard />
+      <ForecastDashboard />
     </div>
   );
 };
