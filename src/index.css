@@ -8,10 +8,6 @@
   .dark {
     @apply dark:bg-gray-800 transition dark:text-zinc-50;
   }
-
-  .font-primary {
-    @apply text-base font-normal text-black;
-  }
 }
 
 html,
