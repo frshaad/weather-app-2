@@ -14,12 +14,10 @@ const Searchbar = (props: Props) => {
     });
 
   if (coords) {
-    console.log('latitude', coords.latitude);
-    console.log('longitude', coords.longitude);
   }
 
   return (
-    <article className='max-w-5/6 mx-auto flex w-96 items-center justify-between gap-1'>
+    <article className='max-w-5/6 mx-auto flex w-5/6 items-center justify-between gap-1 md:w-96'>
       <div className='flex items-center'>
         <label htmlFor='search-box'>
           <BiSearch className='h-5 w-5 cursor-pointer text-strongBlue' />
@@ -31,8 +29,11 @@ const Searchbar = (props: Props) => {
           className='px-2 py-1 text-lg font-medium text-strongBlue outline-none placeholder:text-base placeholder:font-normal placeholder:text-strongBlue/40'
         />
       </div>
-      <button onClick={handleMyLocation}>
-        <TbCurrentLocation className='text-strongBlue' size={18} />
+      <button
+        onClick={handleMyLocation}
+        className='transition hover:scale-105 active:scale-95'
+      >
+        <TbCurrentLocation className='text-strongBlue' size={20} />
       </button>
     </article>
   );

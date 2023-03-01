@@ -5,17 +5,17 @@ import { BsSunrise, BsSunset } from 'react-icons/bs';
 type Props = {};
 const TodayGlance = (props: Props) => {
   return (
-    <article className='mt-5 w-full items-center justify-between rounded-xl bg-normalBlue lg:flex'>
+    <article className='mt-5 w-full items-center justify-between rounded-xl bg-normalBlue p-5 drop-shadow-md lg:flex'>
       {/* info */}
-      <div className='flex flex-col items-center justify-between p-8 text-strongBlue'>
+      <div className='flex flex-col items-center justify-between text-strongBlue lg:w-1/2 lg:p-2'>
         <div className='flex w-full items-center justify-between'>
-          <p className='text-2xl font-bold'>
+          <p className='text-2xl font-bold lg:text-lg'>
             London <span className='font-light'>GB</span>
           </p>
-          <p className='text-base font-normal'>Today 00:32 PM</p>
+          <p className='text-base font-normal lg:text-sm'>Today 00:32 PM</p>
         </div>
         <div className='mt-8 text-center'>
-          <h3 className='relative text-7xl font-medium'>
+          <h3 className='relative text-8xl font-medium'>
             <span>14</span>
             <span className='absolute -right-16 -top-6'>
               <WiDegrees size={120} />
@@ -23,24 +23,25 @@ const TodayGlance = (props: Props) => {
           </h3>
           <p className='mt-3'>Mostly Clear</p>
         </div>
+
         <div className='mt-8 flex w-full items-center justify-between'>
           <div className='flex items-center gap-2'>
             <BsSunrise size={20} /> <span>06:24</span>
           </div>
-          <div className='mt-1 flex items-center gap-4'>
-            <div className='flex items-center gap-1'>
-              <BsThermometerHigh size={18} />
-              <span>
-                <span className='font-medium'>15</span>
-                <sup>o</sup>
-              </span>
-            </div>
-            <div className='flex items-center gap-1'>
+          <div className='mt-1 flex items-center gap-3'>
+            <div className='flex items-center'>
               <BsThermometerLow size={18} />
               <span>
                 <span className='font-medium'>9</span>
                 <sup>o</sup>
               </span>
+            </div>
+            <div className='flex items-center'>
+              <span>
+                <span className='font-medium'>15</span>
+                <sup>o</sup>
+              </span>
+              <BsThermometerHigh size={18} />
             </div>
           </div>
           <div className='flex items-center gap-2'>
@@ -50,7 +51,7 @@ const TodayGlance = (props: Props) => {
       </div>
 
       {/* chart */}
-      <div></div>
+      <div className='xl:w-1/2 xl:p-2'></div>
     </article>
   );
 };

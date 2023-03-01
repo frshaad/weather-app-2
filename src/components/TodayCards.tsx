@@ -6,7 +6,7 @@ import { IoWaterOutline } from 'react-icons/io5';
 type Props = {};
 const TodayCards = (props: Props) => {
   return (
-    <article className='mt-5 flex w-full flex-col items-center justify-between gap-5'>
+    <article className='mt-5 flex w-full flex-col items-center justify-between gap-3 md:gap-5'>
       <div className='flex w-full items-center justify-between gap-5'>
         <TodayCard
           title='wind'

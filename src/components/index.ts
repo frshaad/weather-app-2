@@ -6,3 +6,5 @@ export { default as TodayCard } from './TodayCard';
 export { default as ForecastDashboard } from './ForecastDashboard';
 export { default as TodayForecast } from './TodayForecast';
 export { default as WeekForecast } from './WeekForecast';
+export { default as HourlyForecast } from './HourlyForecast';
+export { default as WeekDayForecast } from './WeekDayForecast';

@@ -7,7 +7,7 @@ type Props = {
 
 const TodayCard = ({ description, icon, title, value }: Props) => {
   return (
-    <div className='flex w-full items-center justify-between rounded-xl bg-weakBlue p-5'>
+    <div className='flex w-full items-center justify-between rounded-xl bg-weakBlue p-5 transition hover:scale-[1.02] hover:bg-normalBlue hover:drop-shadow-md'>
       <div className='flex flex-col items-start justify-between'>
         <div className='flex items-center gap-2'>
           {icon}
