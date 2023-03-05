@@ -6,8 +6,12 @@
 
 @layer components {
   .dark {
-    @apply dark:bg-gray-800 transition dark:text-zinc-50;
+    @apply transition dark:bg-black dark:text-white;
   }
+
+  /* body {
+    @apply dark:bg-black;
+  } */
 }
 
 html,

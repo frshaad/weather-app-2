@@ -1,16 +1,13 @@
-import { TodayGlance, TodayCards, Searchbar } from '@/components';
-import { useCurrentWeather } from '@/hooks';
+import { Searchbar, TodayCards, TodayGlance } from '@/components'
 
-type Props = {};
+type Props = {}
 const TodayDashboard = (props: Props) => {
-  useCurrentWeather();
-
   return (
-    <section className='mx-auto w-full py-10 px-5 md:w-2/3 '>
+    <section className='mx-auto w-full max-w-xl py-10 md:py-14 lg:w-2/3 lg:max-w-full lg:px-5 '>
       <Searchbar />
       <TodayGlance />
       <TodayCards />
     </section>
-  );
-};
-export default TodayDashboard;
+  )
+}
+export default TodayDashboard

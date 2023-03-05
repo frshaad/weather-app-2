@@ -1,6 +1,10 @@
+import {
+  BsSunrise,
+  BsSunset,
+  BsThermometerHigh,
+  BsThermometerLow,
+} from 'react-icons/bs';
 import { WiDegrees } from 'react-icons/wi';
-import { BsThermometerHigh, BsThermometerLow } from 'react-icons/bs';
-import { BsSunrise, BsSunset } from 'react-icons/bs';
 
 type Props = {};
 const TodayGlance = (props: Props) => {

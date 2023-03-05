@@ -1,6 +1,6 @@
 import { TodayCard } from '@/components';
-import { FiWind } from 'react-icons/fi';
 import { BsCloudRain, BsClouds, BsSun, BsThermometerSun } from 'react-icons/bs';
+import { FiWind } from 'react-icons/fi';
 import { IoWaterOutline } from 'react-icons/io5';
 
 type Props = {};
